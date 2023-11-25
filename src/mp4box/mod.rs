@@ -46,6 +46,7 @@
 //!         mehd
 //!         trex
 //! emsg
+//! prft
 //! moof
 //!     mfhd
 //!     traf
@@ -80,6 +81,7 @@ pub(crate) mod mehd;
 pub(crate) mod meta;
 pub(crate) mod mfhd;
 pub(crate) mod minf;
+pub(crate) mod prft;
 pub(crate) mod moof;
 pub(crate) mod moov;
 pub(crate) mod mp4a;
@@ -124,6 +126,7 @@ pub use mehd::MehdBox;
 pub use meta::MetaBox;
 pub use mfhd::MfhdBox;
 pub use minf::MinfBox;
+pub use prft::PrftBox;
 pub use moof::MoofBox;
 pub use moov::MoovBox;
 pub use mp4a::Mp4aBox;
@@ -193,6 +196,7 @@ boxtype! {
     MehdBox => 0x6d656864,
     TrexBox => 0x74726578,
     EmsgBox => 0x656d7367,
+	PrftBox => 0x70726674,
     MoofBox => 0x6d6f6f66,
     TkhdBox => 0x746b6864,
     TfhdBox => 0x74666864,
